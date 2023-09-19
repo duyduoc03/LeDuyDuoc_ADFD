@@ -1,25 +1,25 @@
+import 'package:examp/pages/main_page.dart';
 import 'package:flutter/material.dart';
 import 'package:examp/constants.dart';
-import 'package:examp/pages/home_screen.dart';
 
 void main() {
-  runApp( const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Flutter',
       theme: ThemeData(
         textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const HomeScreen(),
+      home: const MainPage(),
     );
   }
 }
